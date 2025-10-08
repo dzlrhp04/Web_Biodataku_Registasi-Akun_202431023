@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Judul halaman yang akan ditampilkan di web browser-->
+    <title>Registrasi</title>
+</head>
+<body>
+    <!--Judul halaman dengan h1(ukuran tulisan paling besar)-->
+    <h1>Registrasi Akun</h1> 
+    <!--Membuat form de ngan aksi menuju file zb1.html saat dikirim-->
+    <form action="zb1.html"> 
+        <!--Fieldset digunakan untuk mengelompokkan elemen-elemen dalam form-->
+        <fieldset>
+            <!--menampilkan judul kecil di dalam fieldset-->
+            <legend>Formulir Registrasi</legend><br>
+            <!--Input text untuk nama pengguna-->
+            <label for="nama">Masukkan Nama: </label>
+            <input autofocus type="text" name="nama" id="nama" placeholder="Dezalia Rahmanah Putri"><br><br>
+            
+            <!--Input angka untuk nim-->
+            <label for="NIM">Masukkan NIM: </label>
+            <input type="number" name="nim" placeholder="202431023"><br><br>
+            
+            <!--Input email-->
+            <label for="email">Masukkan Email: </label>
+            <input type="email" name="email" id="email" placeholder="dezaliarahmanahputri@gmail.com"><br><br>
+            
+            <!--Pilihan jenis kelamin dengan menggunakan type radio button-->
+            <label for="gender">Jenis Kelamin</label><br><br>
+            <input type="radio" name="gender" id="laki-laki"><label for="laki-laki">Laki-laki</label>
+            <input type="radio" name="gender" id="perempuan"><label for="perempuan">Perempuan</label><br><br>
+            
+            <!--Dropdown pilihan agama-->
+            <label for="agama">Agama</label>
+            <select name="agama" id="agama">
+                <option value="">Islam</option>
+                <option value="">Kristen</option>
+                <option value="">Hindu</option>
+                <option value="">Budha</option>
+                <option value="">Konghucu</option>
+                </select><br><br>
+
+            <!--input untuk password-->
+            <label for="password">Masukkan Password: </label>
+            <input type="password" placeholder="admin123" name="password" id="password"><br><br>
+            
+            <!--input untuk konfirmasi password-->
+            <label for="confirm-password">Konfirmasi Password: </label>
+            <input type="password" name="confirm-password" id="confirm-password"><br><br>
+            <!--Tombol untuk mengirimkan form-->
+            <input type="submit" value="Daftar">
+        </fieldset>
+    </form>
+</body>
+</html>
